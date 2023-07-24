@@ -7,6 +7,7 @@ import { Button } from "@/styles/Buttons";
 import { Stack } from "@/components/Stack";
 import { Project } from "@/components/Project";
 import { Contacts } from "@/components/Contacts";
+import { AboutMe } from "@/pages/myProfily";
 
 // Data
 import { stackData } from "@/utils/stackData";
@@ -47,7 +48,7 @@ export const Home = (): JSX.Element => {
               <Text color="grey4">Hello, my name is {userData.nameUser}</Text>
             </Flex>
             <Text as="h1" type="heading1" color="grey5">
-            I{" "}
+              I{" "}
               <Text as="span" type="heading1" color="brand1">
                 love
               </Text>{" "}
@@ -106,6 +107,7 @@ export const Home = (): JSX.Element => {
             </ProjectsAreaContent>
           </ProjectAreaWrapperColumns>
         </Container>
+        <AboutMe />
       </ProjectsArea>
       <Contacts />
     </main>
